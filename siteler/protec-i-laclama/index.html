@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protec İlaçlama</title>
+    <style>
+        :root {
+            --primary:#006d77;
+            --secondary:#83c5be;
+            --bg:#f5f5f5;
+            --white:#ffffff;
+            --text:#333333;
+            --radius:8px;
+            --shadow:0 4px 12px rgba(0,0,0,0.1);
+            --font-sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        body{
+            margin:0;
+            font-family:var(--font-sans);
+            color:var(--text);
+            background:var(--bg);
+            line-height:1.6;
+        }
+        a{color:inherit;text-decoration:none;}
+        .container{max-width:1200px;margin:auto;padding:0 20px;}
+        header{
+            background:var(--white);
+            box-shadow:var(--shadow);
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 0;
+        }
+        header h1{
+            margin:0;
+            font-size:1.5rem;
+            color:var(--primary);
+        }
+        .btn{
+            background:var(--primary);
+            color:var(--white);
+            border:none;
+            padding:10px 20px;
+            border-radius:var(--radius);
+            cursor:pointer;
+            font-weight:bold;
+            transition:background .3s;
+        }
+        .btn:hover{background:var(--secondary);}
+        .hero{
+            background:linear-gradient(135deg,var(--primary),var(--secondary));
+            color:var(--white);
+            text-align:center;
+            padding:80px 20px;
+        }
+        .hero h2{font-size:2.5rem;margin:0 0 20px;}
+        .hero p{font-size:1.2rem;margin:0 0 30px;}
+        .section{
+            padding:60px 0;
+        }
+        .section h3{
+            text-align:center;
+            font-size:2rem;
+            margin-bottom:40px;
+            color:var(--primary);
+        }
+        .about,.services,.reasons,.contact{
+            background:var(--white);
+            margin-bottom:20px;
+            border-radius:var(--radius);
+            box-shadow:var(--shadow);
+            padding:30px;
+        }
+        .services ul{
+            list-style:none;
+            padding:0;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+        .services li{
+            background:var(--bg);
+            padding:20px;
+            border-radius:var(--radius);
+            text-align:center;
+        }
+        .reasons .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+        .reasons .item{
+            background:var(--bg);
+            padding:20px;
+            border-radius:var(--radius);
+            text-align:center;
+        }
+        .contact .info{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+        footer{
+            background:var(--primary);
+            color:var(--white);
+            text-align:center;
+            padding:20px 0;
+        }
+        .footer-btn{
+            background:var(--secondary);
+            color:var(--primary);
+            margin:5px;
+        }
+        @media (max-width:600px){
+            .hero h2{font-size:2rem;}
+            .hero p{font-size:1rem;}
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Protec İlaçlama</h1>
+        <a href="tel:+905543903683" class="btn">Hemen Ara</a>
+    </header>
+
+    <section class="hero">
+        <h2>Sağlığınız İçin Güvenilir İlaçlama Hizmetleri</h2>
+        <p>Hijyenik ortamlar, etkili çözümler. Uzman ekibimizle yanınızdayız.</p>
+        <a href="tel:+905543903683" class="btn">Randevu İçin Arayın 📞</a>
+    </section>
+
+    <section class="section container">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+            <p>Protec İlaçlama, tıbbi ortamların hijyenini sağlamak ve enfeksiyon riskini en aza indirmek için modern yöntemler ve uzman ekip ile hizmet vermektedir. Sağlıklı bir ortam, sağlıklı bir yaşam demektir.</p>
+        </div>
+
+        <div class="services">
+            <h3>Hizmetlerimiz</h3>
+            <ul>
+                <li>🧪 Tıbbi Alan Dezenfeksiyonu</li>
+                <li>💉 Enfeksiyon Kontrolü</li>
+                <li>🛡️ Hava ve Yüzey Mikrobiyal Temizliği</li>
+                <li>🩺 Hasta Odası ve Muayenehane İlaçlaması</li>
+            </ul>
+        </div>
+
+        <div class="reasons">
+            <h3>Neden Biz?</h3>
+            <div class="grid">
+                <div class="item">✅ Uzman ve Sertifikalı Personel</div>
+                <div class="item">✅ FDA Onaylı ve Çevre Dostu Ürünler</div>
+                <div class="item">✅ Hızlı ve Etkili Sonuçlar</div>
+                <div class="item">✅ 7/24 Acil Destek</div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3>İletişim</h3>
+            <div class="info">
+                <div>📍 Çınarlı, Süs Kirazı Sk. 6 / A, 59200 Süleymanpaşa/Tekirdağ</div>
+                <div>📞 <a href="tel:+905543903683">+90 554 390 36 83</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Protec İlaçlama - Tüm Hakları Saklıdır.</p>
+        <a href="tel:+905543903683" class="btn footer-btn">📞 Telefon</a>
+        <a href="https://wa.me/905543903683" class="btn footer-btn">💬 WhatsApp</a>
+    </footer>
+</body>
+</html>
